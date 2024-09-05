@@ -7,15 +7,15 @@ console.log(c)
 c = 'werty';
 console.log(c)*/
 
-const button = document.querySelector('.button')
+/*const button = document.querySelector('.button')
 console.log(button.closest('button'))
-/*button.style.background = 'red'
+button.style.background = 'red'
 button.style.border = 'none'
 button.style.color = 'white'
 button.style.padding = '10px 20px'
 button.style.borderRadius = '30px'*/
 
-function toggleClass() {
+/*function toggleClass() {
     //button.classList.add("active")
     //button.classList.remove("butto")
     button.classList.toggle('active')
@@ -23,8 +23,8 @@ function toggleClass() {
 }
 
 function changeText() {
-    console.log(button.closest('active'))
-    if(button.closest('active')) {
+    console.log(button.closest('.active'))
+    if(button.closest('.active')) {
         
         button.innerText = "close"
     } else {
@@ -33,5 +33,11 @@ function changeText() {
 
 }
 
-button.addEventListener("click", toggleClass)
+button.addEventListener("click", toggleClass)*/
 
+const button = document.querySelector('.button')
+const text = document.querySelector('.text')
+function toggleClass() {
+    text.classList.toggle("active")
+}
+button.addEventListener("click", toggleClass)

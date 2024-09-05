@@ -1,4 +1,4 @@
-.button {
+/*.button {
     background-color: red;
     color: white;
     border: none;
@@ -8,4 +8,31 @@
 .active {
     color: black;
     background-color: gray;
+}*/
+
+.inner {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+.text {
+    display: block;
+    text-align: center;
+    transition: all 0.3s;
+    height: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.active {
+   height: 0;
+   opacity: 0;
 }
